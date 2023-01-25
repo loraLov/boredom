@@ -9,7 +9,6 @@ function App() {
     const getAdvice = async() =>{
       const response = await fetch(`https://www.boredapi.com/api/activity/`);
       const data = await response.json();
-      console.log(data.activity);
       setAdvice(data.activity);
     }
     useEffect(() => {
